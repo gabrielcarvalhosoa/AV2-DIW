@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Votar | A Fazenda 2026</title>
+        <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logo-fazenda.jpg" alt="A Fazenda" class="logo">
+                    Votação 2026
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="votacao.html">Votar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resultado.html">Resultado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-4">
+            <h1 class="h2">Quem você quer eliminar?</h1>
+            <p>Cada clique conta um voto para tirar o peão da fazenda.</p>
+
+            <div id="mensagem"></div>
+            <div id="cardsRoca" class="row row-cols-1 row-cols-md-3 g-3"></div>
+
+            <h2 class="h4 mt-5">Demais peões</h2>
+            <p class="text-white-50">Fora da roça nesta semana, não podem receber votos.</p>
+            <div id="cardsPeoes" class="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-2"></div>
+        </main>
+
+        <footer class="text-center small py-4">DIAW 2026, PUC Minas</footer>
+
+        <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/votacao.js"></script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Votação 2026 | A Fazenda</title>
+        <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logo-fazenda.jpg" alt="A Fazenda" class="logo">
+                    Votação 2026
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="votacao.html">Votar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resultado.html">Resultado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-5 text-center">
+                    <img src="img/fazendeiro.jpg" alt="Fazendeiro João Paulo" class="rounded-circle img-fluid foto-fazendeiro">
+                    <p class="mt-2 mb-0 fw-bold">Fazendeiro João Paulo</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="card p-4">
+                        <h1 class="h2 text-dark">Ô de casa! Aqui quem manda é o fazendeiro.</h1>
+                        <p>Três peões foram parar na roça esta semana. Só um volta pra casa, e quem decide é você. Pode votar quantas vezes quiser.</p>
+                        <div class="d-flex gap-2">
+                            <a href="votacao.html" class="btn btn-danger">Votar agora</a>
+                            <a href="resultado.html" class="btn btn-dark">Ver parcial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h4 mt-5 mb-3">Na roça desta semana</h2>
+            <div id="participantesRoca" class="d-flex flex-wrap gap-2"></div>
+        </main>
+
+        <footer class="text-center small py-4">DIAW 2026, PUC Minas</footer>
+
+        <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Rye";
+    src: url("../fonts/rye.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/nunito-400.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/nunito-700.woff2") format("woff2");
+    font-weight: 700;
+}
+
+:root {
+    --creme: #f5ead2;
+    --marrom: #3b2411;
+    --dourado: #e8c15a;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--creme);
+    background: repeating-linear-gradient(#7a4f2a 0 90px, #6b4423 90px 94px);
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "Rye", serif;
+    font-weight: 400;
+}
+
+h1, h2 {
+    color: var(--dourado);
+}
+
+.navbar {
+    background-color: var(--marrom);
+}
+
+.navbar .nav-link.active {
+    color: var(--dourado);
+}
+
+.logo {
+    height: 48px;
+}
+
+.card, .modal-content {
+    color: var(--marrom);
+    background-color: var(--creme);
+}
+
+.card-img-top {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.foto-fazendeiro {
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 6px solid var(--dourado);
+}
+
+.foto-mini {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.foto-resultado {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.progress {
+    height: 20px;
+}
